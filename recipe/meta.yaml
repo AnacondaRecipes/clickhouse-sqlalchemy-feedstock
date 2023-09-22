@@ -10,7 +10,8 @@ source:
 
 build:
   number: 0
-  skip: True  # [py<37]
+  # clickhouse-driver isn't available on s390x and aarch64.
+  skip: True  # [py<37 or (linux and (s390x or aarch64))]
   script: pip install . --no-deps --no-build-isolation -vv
 
 requirements:
