@@ -35,6 +35,8 @@ test:
     - clickhouse_sqlalchemy.drivers.native
     - clickhouse_sqlalchemy.orm
     - clickhouse_sqlalchemy.sql
+  requires:
+    - pip
   commands: 
     - pip check
 
