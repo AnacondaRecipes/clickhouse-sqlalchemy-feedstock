@@ -12,7 +12,7 @@ build:
   number: 0
   # clickhouse-driver isn't available on s390x and aarch64.
   skip: True  # [py<37 or (linux and (s390x or aarch64))]
-  script: pip install . --no-deps --no-build-isolation -vv
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
   host:
@@ -35,8 +35,6 @@ test:
     - clickhouse_sqlalchemy.drivers.native
     - clickhouse_sqlalchemy.orm
     - clickhouse_sqlalchemy.sql
-  requires: 
-    - pip
   commands: 
     - pip check
 
