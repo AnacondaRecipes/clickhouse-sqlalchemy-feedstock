@@ -1,0 +1,3 @@
+channels:
+  - https://staging.continuum.io/prefect/fs/asynch-feedstock/pr1/5846bd9
+  - https://staging.continuum.io/prefect/fs/python-zstd-feedstock/pr1/39b6afe
