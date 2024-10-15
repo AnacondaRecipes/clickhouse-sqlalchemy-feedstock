@@ -25,7 +25,8 @@ requirements:
     - python
     - clickhouse-driver >=0.1.2
     - requests
-    - sqlalchemy >=1.4,<1.5
+    - sqlalchemy >=2.0.0,<2.1.0
+    - asynch >=0.2.2
 
 test:
   imports:
@@ -37,7 +38,7 @@ test:
     - clickhouse_sqlalchemy.sql
   requires:
     - pip
-  commands: 
+  commands:
     - pip check
 
 about:
